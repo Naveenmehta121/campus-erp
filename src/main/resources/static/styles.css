@@ -1,0 +1,24 @@
+/* CampusERP — plain CSS, no framework. Clean, readable, mobile-friendly. */
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, sans-serif; margin: 0; color: #1f2937; background: #f8fafc; }
+header { background: #4f46e5; color: #fff; padding: 20px 24px; }
+header h1 { margin: 0; }
+.sub { opacity: .9; margin: 4px 0 12px; }
+.hint { font-size: 13px; opacity: .85; margin: 8px 0 0; }
+input, button { padding: 8px 10px; border-radius: 6px; border: 1px solid #cbd5e1; font-size: 14px; }
+button { background: #4f46e5; color: #fff; border: none; cursor: pointer; }
+button:hover { background: #4338ca; }
+main { max-width: 960px; margin: 0 auto; padding: 20px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; }
+.card b { font-size: 24px; }
+.card span { color: #64748b; font-size: 13px; }
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.tabs button { background: #e2e8f0; color: #1f2937; }
+.tabs button.active { background: #4f46e5; color: #fff; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e2e8f0; font-size: 14px; }
+th { background: #f1f5f9; }
+.add { margin-top: 24px; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.add h3 { width: 100%; margin: 0; }
+.muted { color: #64748b; }

@@ -1,0 +1,21 @@
+# Build output
+target/
+*.class
+*.jar
+*.war
+
+# H2 file database (regenerated from seed data on first run)
+data/
+
+# Maven wrapper downloads
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusERP — Mini College ERP</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>🎓 CampusERP</h1>
+  <p class="sub">Mini ERP for a college — students · fees · attendance · timetable · inventory</p>
+  <div id="login">
+    <input id="user" placeholder="username" value="admin">
+    <input id="pass" type="password" placeholder="password" value="admin123">
+    <button onclick="login()">Log in</button>
+    <span id="who"></span>
+  </div>
+  <p class="hint">Demo logins — admin/admin123 (full access) · faculty/faculty123 (mark attendance) · student/student123 (read-only)</p>
+</header>
+
+<main>
+  <section id="cards" class="cards"></section>
+
+  <nav class="tabs">
+    <button onclick="show('students')" class="active">Students</button>
+    <button onclick="show('fees')">Fees</button>
+    <button onclick="show('attendance')">Attendance</button>
+    <button onclick="show('timetable')">Timetable</button>
+    <button onclick="show('inventory')">Inventory</button>
+  </nav>
+
+  <section id="panel"><p class="muted">Log in, then pick a tab.</p></section>
+
+  <section class="add">
+    <h3>Add a student (admin only)</h3>
+    <input id="s-name" placeholder="Name">
+    <input id="s-roll" placeholder="Roll no, e.g. CSE-2023-009">
+    <input id="s-email" placeholder="Email">
+    <input id="s-course" placeholder="Course, e.g. BTech CSE" value="BTech CSE">
+    <input id="s-sem" type="number" placeholder="Semester" value="6">
+    <button onclick="addStudent()">Add student</button>
+    <span id="add-msg"></span>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
